@@ -6,13 +6,55 @@ $('button').click(function() {
     location.reload();
 });
 
+//pair programming team: Kyle Russell & Kevin Tran
 //game counter
 var gameCounter = 0;
 
+//created function when user clicks
+    $('.box').click(function(){
+    if ($(this).html() === '') {
+    for (var i = 0; i < 1; i++) {
+      if (gameCounter % 2 === 0) {
+        $(this).html('X');
+        gameCounter++;
+      } else {
+        $(this).html('O');
+        gameCounter++;
+        }
+      }
+    }
+  });
+
+
+
+
+
+
+
+
+
+//attempt 1
+// if ($('#topLeft').html('') === ''){
+// for (var i = 0; i < 9; i++) {
+//   if (gameCounter % 2 === 0) {
+//     $('#topLeft').html('X');
+//     gameCounter++;
+//   } else {
+//     $('#topLeft').html('O');
+//     gameCounter++;
+//     }
+//   }
+// }
+
+
+
 //setting all game boxes to variable
-var box1 = $('#topLeft').click(function(){
-  console.log('box 1');
-});
+// var box1 = $('#topLeft').click(function(){
+  // console.log('box 1');
+  // $(this).css('background-color', 'red');
+  // $(this).html('X');
+  // $(this).text('O');
+// });
 var box2 = $('#topMiddle').click(function(){
   console.log('box 2');
 });
@@ -37,10 +79,6 @@ var box8 = $('#bottomMiddle').click(function(){
 var box9 = $('#bottomRight').click(function(){
   console.log('box 9');
 });
-
-
-
-
 
 
 
