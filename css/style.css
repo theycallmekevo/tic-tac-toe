@@ -6,3 +6,9 @@
   border: 1px solid black;
   height: 200px;
 }
+
+/*user hover over box effects*/
+.box:hover{
+  cursor: pointer;
+  background-color: #EBEBEB;
+}
