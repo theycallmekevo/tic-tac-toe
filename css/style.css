@@ -1,12 +1,30 @@
-#board {
+body{
+  font-size: 140px;
+  font-family: 'Chewy', cursive;
+}
+#board{
   margin-top: 10px;
 }
-
-.box {
+h1 {
+  font-size: 60px;
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 1s;
+  -vendor-animation-iteration-count: 5;
+}
+.orange{
+  color: #ffa500;
+}
+.blue{
+  color: #088da5;
+}
+.green{
+  color: #6dc066;
+}
+.box{
   border: 1px solid black;
   height: 200px;
+  padding: 0 8%;
 }
-
 /*user hover over box effects*/
 .box:hover{
   cursor: pointer;

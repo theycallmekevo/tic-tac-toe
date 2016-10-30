@@ -46,10 +46,10 @@ $('.box').click(function(){
     }
 //checks if condition is true and alerts user of Winner!
     if(xWins){
-      console.log('X wins!');
+      alert('Player X wins!');
       return;
     } else if (oWins) {
-      console.log('O wins!');
+      alert('Player O wins!');
       return;
     } else {
   }
