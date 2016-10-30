@@ -25,6 +25,32 @@ var gameCounter = 0;
     }
   });
 
+//creating win conditions
+var win1 = [$('#topLeft').text(), $('#topMiddle').text(), $('#topRight').text()];
+var win2 = [$('#middleLeft').text(), $('#middleMiddle').text(), $('#middleRight').text()];
+var win3 = [$('#bottomLeft').text(), $('#bottomMiddle').text(), $('#bottomRight').text()];
+var win4 = [$('#topLeft').text(), $('#middleLeft').text(), $('#bottomLeft').text()];
+var win5 = [$('#topMiddle').text(), $('#middleMiddle').text(), $('#bottomMiddle').text()];
+var win6 = [$('#topRight').text(), $('#middleMiddle').text(), $('#bottomRight').text()];
+var win7 = [$('#topLeft').text(), $('#middleMiddle').text(), $('#bottomRight').text()];
+
+var waysToWin = [win1, win2, win3, win4, win5, win6, win7];
+
+var win1 = ($('#topLeft').text() === 'X' && $('#topMiddle').text() === 'X' && $('#topRight').text() === 'X');
+var win2 = [$('#middleLeft').text(), $('#middleMiddle').text(), $('#middleRight').text()];
+var win3 = [$('#bottomLeft').text(), $('#bottomMiddle').text(), $('#bottomRight').text()];
+var win4 = [$('#topLeft').text(), $('#middleLeft').text(), $('#bottomLeft').text()];
+var win5 = [$('#topMiddle').text(), $('#middleMiddle').text(), $('#bottomMiddle').text()];
+var win6 = [$('#topRight').text(), $('#middleMiddle').text(), $('#bottomRight').text()];
+var win7 = [$('#topLeft').text(), $('#middleMiddle').text(), $('#bottomRight').text()];
+
+// var full = [win1, win2, win3, win4, win5, win6, win7];
+
+if (win1) {
+  alert('yea!');
+} if($('#topLeft').text() === 'X' && $('#middleMiddle').text() === 'X' && $('#bottomRight').text() === 'X'){
+  alert('also yea!');
+}
 
 
 
@@ -33,18 +59,12 @@ var gameCounter = 0;
 
 
 
-//attempt 1
-// if ($('#topLeft').html('') === ''){
-// for (var i = 0; i < 9; i++) {
-//   if (gameCounter % 2 === 0) {
-//     $('#topLeft').html('X');
-//     gameCounter++;
-//   } else {
-//     $('#topLeft').html('O');
-//     gameCounter++;
-//     }
-//   }
-// }
+
+
+
+
+
+
 
 
 
@@ -79,57 +99,6 @@ var box8 = $('#bottomMiddle').click(function(){
 var box9 = $('#bottomRight').click(function(){
   console.log('box 9');
 });
-
-
-
-
-
-//
-// //variables of user clicks on each box
-// var topLeft = $('#topLeft').click(function(){
-//     $(this).css({'background-image': 'url(images/ex.jpg)',
-//                  'background-position': 'center',
-//                  'background-size': 'cover'});
-//               });
-//
-// var topMiddle = $('#topMiddle').click(function(){
-//     $(this).css('background-color', '#0099cc');
-// });
-//
-// var topRight = $('#topRight').click(function(){
-//     $(this).css('background-color', '#ffdab9');
-// });
-//
-// var middleLeft = $('#middleLeft').click(function(){
-//     $(this).css('background-color', '#6897bb');
-// });
-//
-// var middleMiddle = $('#middleMiddle').click(function(){
-//     $(this).css('background-color', '#ffb6c1');
-// });
-//
-// var middleRight = $('#middleRight').click(function(){
-//     $(this).css('background-color', '#e6e6fa');
-// });
-//
-// var bottomLeft = $('#bottomLeft').click(function(){
-//     $(this).css('background-color', '#ffd700');
-// });
-//
-// var bottomMiddle = $('#bottomMiddle').click(function(){
-//     $(this).css('background-color', '#00ff7f');
-// });
-//
-// var bottomRight = $('#bottomRight').click(function(){
-//     $(this).css('background-color', '#990000');
-// });
-
-
-
-
-
-
-
 
 
 });
